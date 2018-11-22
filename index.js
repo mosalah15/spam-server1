@@ -29,6 +29,8 @@ function timerFunc() {
 }
 
 var timer = setTimeout(timerFunc, 1000);
+    }
+});
  client.on("message", function(message) {
     var args = message.content.split(/ +/g);
     var command = args.shift()
