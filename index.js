@@ -28,21 +28,6 @@ function timerFunc() {
     });
 }
 
-client.on('message', async msg => {
-const devs = ['348883739738112004'];
-if(!devs.includes(message.author.id)) return;
-  if(msg.author.bot) return;
-  let prefix = "1";
-  if(!msg.content.startsWith(prefix)) return;
-  let command = msg.content.split(" ")[0].slice(prefix.length);
-  let args = msg.content.split(" ").slice(1);
- 
-  if(command == 'say') {
-    if(!args.join(" ")) return msg.delete();
-    msg.channel.send(args.join(" "));
-    return;
-  }
-});
 client.on("message", function(message) {
     var args = message.content.split(/ +/g);
     var command = args.shift()
