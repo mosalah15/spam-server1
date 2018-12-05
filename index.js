@@ -6,7 +6,7 @@ console.log("Scrpit By Dream");
 client.on("ready", () => {
 let channel =     client.channels.get("roomID")
 setInterval(function() {
-channel.send(spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam);
+channel.send(spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam);
 }, 25)
 })
  
@@ -18,6 +18,5 @@ channel.send(spam spam spam spam spam spam spam spam spam spam spam spam spam sp
         message.channel.send(args.slice(1, args.length).join(" "))    
     }
 });
-}
 
 client.login(process.env.BOT_TOKEN);
